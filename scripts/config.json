@@ -42,6 +42,8 @@
     { "name": "go122", "source": "versions", "rule": "golang" },
     { "name": "go123", "source": "versions", "rule": "golang" },
     { "name": "go124", "source": "main", "rule": "golang" }
+   ,{ "name": "flutter", "source": "extras", "rule": "flutter" }
+   ,{ "name": "dbeaver", "source": "extras", "rule": "dbeaver" }
   ],
   "rules": {
     "adoptium": {
