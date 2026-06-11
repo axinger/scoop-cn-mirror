@@ -7,7 +7,7 @@
   "architecture": {
     "64bit": {
       "url": [
-        "https://mirrors.tuna.tsinghua.edu.cn/python/3.7.9/python-3.7.9-amd64.exe#/setup.exe",
+        "https://mirrors.nju.edu.cn/python/3.7.9/python-3.7.9-amd64.exe#/setup.exe",
         "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
         "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
       ],

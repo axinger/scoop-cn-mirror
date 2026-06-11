@@ -6,7 +6,7 @@
   "notes": "Allow applications and third-party installers to find python by running: \"$dir\\install-pep-514.reg\"",
   "architecture": {
     "64bit": {
-      "url": "https://mirrors.tuna.tsinghua.edu.cn/python/3.13.13/python-3.13.13-amd64.exe#/setup.exe",
+      "url": "https://mirrors.nju.edu.cn/python/3.13.13/python-3.13.13-amd64.exe#/setup.exe",
       "hash": "3c9c81d80f91c002ced86d645422d81432c68c7d9b6b0e974768ca2e449a4d00"
     },
     "32bit": {
