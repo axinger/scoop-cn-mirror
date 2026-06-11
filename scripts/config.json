@@ -81,6 +81,16 @@
       "pattern": "https://dl\\.google\\.com/go/(go[^\"]+\\.zip)",
       "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/golang/{1}",
       "hashSuffix": ".sha256"
+    },
+    "flutter": {
+      "pattern": "https://storage\\.googleapis\\.com/flutter_infra_release/releases/([^/]+)/windows/(flutter_windows_[^\"]+-stable\\.zip)",
+      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/flutter_infra/releases/{1}/windows/{2}",
+      "hashSuffix": null
+    },
+    "dbeaver": {
+      "pattern": "https://github\\.com/dbeaver/dbeaver/releases/download/[^/]+/(dbeaver-ce-[^\"]+\\.zip)",
+      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/github-release/dbeaver/dbeaver/LatestRelease/{1}",
+      "hashSuffix": null
     }
   }
 }

@@ -17,9 +17,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup PowerShell
-        uses: actions/setup-powershell@v1
-
       - name: Clone Scoop buckets
         run: |
           mkdir -p /tmp/scoop-buckets
