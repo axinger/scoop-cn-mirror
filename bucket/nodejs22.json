@@ -1,0 +1,58 @@
+{
+  "version": "22.22.3",
+  "description": "An asynchronous event driven JavaScript runtime designed to build scalable network applications.",
+  "homepage": "https://nodejs.org",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://mirrors.aliyun.com/nodejs-release/v22.22.3/node-v22.22.3-win-x64.7z",
+      "hash": "42d1ecf662fe82005bbcef990959f07d8dee56e3f6c5e5ddf811ef772073daec",
+      "extract_dir": "node-v22.22.3-win-x64"
+    },
+    "32bit": {
+      "url": "https://nodejs.org/dist/v22.22.3/node-v22.22.3-win-x86.7z",
+      "hash": "1b9c5d28dbe236f158ce4be3a3963ba32b5b4b5fe328d4145dc77991dd08ac60",
+      "extract_dir": "node-v22.22.3-win-x86"
+    },
+    "arm64": {
+      "url": "https://nodejs.org/dist/v22.22.3/node-v22.22.3-win-arm64.7z",
+      "hash": "09fac9d9531fa3030e3c782b3588165cb9f70559bd576f91ea3472774efb9bbf",
+      "extract_dir": "node-v22.22.3-win-arm64"
+    }
+  },
+  "persist": [
+    "bin",
+    "cache"
+  ],
+  "env_add_path": [
+    "bin",
+    "."
+  ],
+  "post_install": [
+    "# Set npm prefix to install modules inside bin and npm cache so they persist",
+    "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
+  ],
+  "checkver": {
+    "url": "https://nodejs.org/dist/latest-v22.x/",
+    "regex": "node-v([\\d.]+)-win-x64\\.7z"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z",
+        "extract_dir": "node-v$version-win-x64"
+      },
+      "32bit": {
+        "url": "https://nodejs.org/dist/v$version/node-v$version-win-x86.7z",
+        "extract_dir": "node-v$version-win-x86"
+      },
+      "arm64": {
+        "url": "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z",
+        "extract_dir": "node-v$version-win-arm64"
+      }
+    },
+    "hash": {
+      "url": "$baseurl/SHASUMS256.txt.asc"
+    }
+  }
+}
