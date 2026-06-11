@@ -84,7 +84,7 @@
     },
     "flutter": {
       "pattern": "https://storage\\.googleapis\\.com/flutter_infra_release/releases/([^/]+)/windows/(flutter_windows_[^\"]+-stable\\.zip)",
-      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/flutter_infra/releases/{1}/windows/{2}",
+      "rewrite": "https://mirrors.nju.edu.cn/flutter_infra/releases/{1}/windows/{2}",
       "hashSuffix": null
     },
     "dbeaver": {
