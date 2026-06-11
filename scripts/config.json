@@ -1,0 +1,84 @@
+{
+  "buckets": {
+    "main": "https://github.com/ScoopInstaller/Main.git",
+    "java": "https://github.com/ScoopInstaller/Java.git",
+    "extras": "https://github.com/ScoopInstaller/Extras.git",
+    "versions": "https://github.com/ScoopInstaller/Versions.git"
+  },
+  "software": [
+    { "name": "temurin8-jdk", "source": "java", "rule": "adoptium" },
+    { "name": "temurin11-jdk", "source": "java", "rule": "adoptium" },
+    { "name": "temurin17-jdk", "source": "java", "rule": "adoptium" },
+    { "name": "temurin21-jdk", "source": "java", "rule": "adoptium" },
+    { "name": "maven", "source": "main", "rule": "apache-maven" },
+    { "name": "gradle", "source": "main", "rule": "gradle" },
+    { "name": "git", "source": "main", "rule": "git-for-windows" },
+    { "name": "python", "source": "main", "rule": "python" },
+    { "name": "python310", "source": "versions", "rule": "python" },
+    { "name": "python311", "source": "versions", "rule": "python" },
+    { "name": "python312", "source": "versions", "rule": "python" },
+    { "name": "python313", "source": "versions", "rule": "python" },
+    { "name": "python314", "source": "versions", "rule": "python" },
+    { "name": "python35", "source": "versions", "rule": "python" },
+    { "name": "python36", "source": "versions", "rule": "python" },
+    { "name": "python37", "source": "versions", "rule": "python" },
+    { "name": "python38", "source": "versions", "rule": "python" },
+    { "name": "python39", "source": "versions", "rule": "python" },
+    { "name": "nodejs-lts", "source": "main", "rule": "nodejs" },
+    { "name": "nodejs16", "source": "versions", "rule": "nodejs" },
+    { "name": "nodejs18", "source": "versions", "rule": "nodejs" },
+    { "name": "nodejs20", "source": "versions", "rule": "nodejs" },
+    { "name": "nodejs22", "source": "versions", "rule": "nodejs" },
+    { "name": "nodejs24", "source": "versions", "rule": "nodejs" },
+    { "name": "go113", "source": "versions", "rule": "golang" },
+    { "name": "go114", "source": "versions", "rule": "golang" },
+    { "name": "go115", "source": "versions", "rule": "golang" },
+    { "name": "go116", "source": "versions", "rule": "golang" },
+    { "name": "go117", "source": "versions", "rule": "golang" },
+    { "name": "go118", "source": "versions", "rule": "golang" },
+    { "name": "go119", "source": "versions", "rule": "golang" },
+    { "name": "go120", "source": "versions", "rule": "golang" },
+    { "name": "go121", "source": "versions", "rule": "golang" },
+    { "name": "go122", "source": "versions", "rule": "golang" },
+    { "name": "go123", "source": "versions", "rule": "golang" },
+    { "name": "go124", "source": "main", "rule": "golang" }
+  ],
+  "rules": {
+    "adoptium": {
+      "pattern": "https://github\\.com/adoptium/temurin(\\d+)-binaries/releases/download/([^/]+)/([^\"]+\\.zip)",
+      "rewrite": "https://mirrors.nju.edu.cn/adoptium/{1}/jdk/x64/windows/{3}",
+      "hashSuffix": ".sha256.txt"
+    },
+    "apache-maven": {
+      "pattern": "https://(?:downloads|dlcdn|archive)\\.apache\\.org/(maven/maven-\\d+/[^/]+/binaries/[^\"]+\\.zip)",
+      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/apache/{1}",
+      "hashSuffix": ".sha256"
+    },
+    "gradle": {
+      "pattern": "https://services\\.gradle\\.org/distributions/([^\"]+)",
+      "rewrite": "https://mirrors.cloud.tencent.com/gradle/{1}",
+      "hashSuffix": null
+    },
+    "git-for-windows": {
+      "pattern": "https://github\\.com/git-for-windows/git/releases/download/[^/]+/(PortableGit-[^\"]+\\.7z\\.exe#/dl\\.7z)",
+      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/{1}",
+      "hashSuffix": null
+    },
+    "python": {
+      "pattern": "https://www\\.python\\.org/ftp/python/([^/]+)/(python-[^\"]+\\.exe)",
+      "rewrite": "https://mirrors.nju.edu.cn/python/{1}/{2}",
+      "hashSuffix": null
+    },
+    "nodejs": {
+      "pattern": "https://nodejs\\.org/dist/(v[^/]+)/(node-[^\"]+\\.(zip|7z|xz))",
+      "rewrite": "https://mirrors.aliyun.com/nodejs-release/{1}/{2}",
+      "hashSuffix": null,
+      "hashFromShasums": true
+    },
+    "golang": {
+      "pattern": "https://dl\\.google\\.com/go/(go[^\"]+\\.zip)",
+      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/golang/{1}",
+      "hashSuffix": ".sha256"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+name: Sync Scoop CN Mirror
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PowerShell
+        uses: actions/setup-powershell@v1
+
+      - name: Clone Scoop buckets
+        run: |
+          mkdir -p /tmp/scoop-buckets
+          git clone --depth 1 https://github.com/ScoopInstaller/Main.git /tmp/scoop-buckets/main
+          git clone --depth 1 https://github.com/ScoopInstaller/Java.git /tmp/scoop-buckets/java
+          git clone --depth 1 https://github.com/ScoopInstaller/Extras.git /tmp/scoop-buckets/extras
+          git clone --depth 1 https://github.com/ScoopInstaller/Versions.git /tmp/scoop-buckets/versions
+
+      - name: Run sync script
+        shell: pwsh
+        run: |
+          ./scripts/sync.ps1
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bucket/
+          git diff --cached --quiet || (
+            git commit -m "chore: sync scoop buckets $(date +%Y-%m-%d)" &&
+            git push
+          )
