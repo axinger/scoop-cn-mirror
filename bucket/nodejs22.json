@@ -10,12 +10,12 @@
       "extract_dir": "node-v22.22.3-win-x64"
     },
     "32bit": {
-      "url": "https://nodejs.org/dist/v22.22.3/node-v22.22.3-win-x86.7z",
+      "url": "https://mirrors.aliyun.com/nodejs-release/v22.22.3/node-v22.22.3-win-x86.7z",
       "hash": "1b9c5d28dbe236f158ce4be3a3963ba32b5b4b5fe328d4145dc77991dd08ac60",
       "extract_dir": "node-v22.22.3-win-x86"
     },
     "arm64": {
-      "url": "https://nodejs.org/dist/v22.22.3/node-v22.22.3-win-arm64.7z",
+      "url": "https://mirrors.aliyun.com/nodejs-release/v22.22.3/node-v22.22.3-win-arm64.7z",
       "hash": "09fac9d9531fa3030e3c782b3588165cb9f70559bd576f91ea3472774efb9bbf",
       "extract_dir": "node-v22.22.3-win-arm64"
     }

@@ -10,7 +10,7 @@
       "extract_dir": "node-v16.20.2-win-x64"
     },
     "32bit": {
-      "url": "https://nodejs.org/dist/v16.20.2/node-v16.20.2-win-x86.7z",
+      "url": "https://mirrors.aliyun.com/nodejs-release/v16.20.2/node-v16.20.2-win-x86.7z",
       "hash": "b0b2ef51565a01e34e4743ab5b26d76d34bb5403479c8b591f5ae434e0ab4adc",
       "extract_dir": "node-v16.20.2-win-x86"
     }

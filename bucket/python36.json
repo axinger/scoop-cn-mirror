@@ -6,28 +6,12 @@
   "notes": "Allow applications and third-party installers to find python by running: \"$dir\\install-pep-514.reg\"",
   "architecture": {
     "64bit": {
-      "url": [
-        "https://mirrors.nju.edu.cn/python/3.6.8/python-3.6.8-amd64.exe#/setup.exe",
-        "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
-        "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
-      ],
-      "hash": [
-        "md5:72f37686b7ab240ef70fdb931bdf3cb5",
-        "af18373f558f56a9823d1d9020421955d0f7cb67f67e2c0dbb1bd7aba6e7132b",
-        "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
-      ]
+      "url": "https://mirrors.nju.edu.cn/python/3.6.8/python-3.6.8-amd64.exe#/setup.exe",
+      "hash": "96088a58b7c43bc83b84e6b67f15e8706c614023dd64f9a5a14e81ff824adadc"
     },
     "32bit": {
-      "url": [
-        "https://www.python.org/ftp/python/3.6.8/python-3.6.8.exe#/setup.exe",
-        "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
-        "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
-      ],
-      "hash": [
-        "md5:9c7b1ebdd3a8df0eebfda2f107f1742c",
-        "af18373f558f56a9823d1d9020421955d0f7cb67f67e2c0dbb1bd7aba6e7132b",
-        "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
-      ]
+      "url": "https://mirrors.nju.edu.cn/python/3.6.8/python-3.6.8.exe#/setup.exe",
+      "hash": "89871d432bc06e4630d7b64cb1a8451e53c80e68de29029976b12aad7dbfa5a0"
     }
   },
   "pre_install": [

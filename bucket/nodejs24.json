@@ -10,7 +10,7 @@
       "extract_dir": "node-v24.16.0-win-x64"
     },
     "arm64": {
-      "url": "https://nodejs.org/dist/v24.16.0/node-v24.16.0-win-arm64.7z",
+      "url": "https://mirrors.aliyun.com/nodejs-release/v24.16.0/node-v24.16.0-win-arm64.7z",
       "hash": "e4357cd1ef3b6c67fb99547c4b736aa6732e2b4abd38ece252e119332fb49621",
       "extract_dir": "node-v24.16.0-win-arm64"
     }
