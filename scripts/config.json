@@ -89,7 +89,7 @@
     },
     "dbeaver": {
       "pattern": "https://github\\.com/dbeaver/dbeaver/releases/download/[^/]+/(dbeaver-ce-[^\"]+\\.zip)",
-      "rewrite": "https://mirrors.tuna.tsinghua.edu.cn/github-release/dbeaver/dbeaver/LatestRelease/{1}",
+      "rewrite": "https://mirrors.nju.edu.cn/github-release/dbeaver/dbeaver/LatestRelease/{1}",
       "hashSuffix": null
     }
   }
