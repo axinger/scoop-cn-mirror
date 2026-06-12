@@ -13,11 +13,11 @@
       "hash": "14b3e9a710a3fcf0bd9b55ab6b60412bd91227563f813fc49040cabc0209e0bd"
     },
     "32bit": {
-      "url": "https://www.python.org/ftp/python/3.14.6/python-3.14.6.exe#/setup.exe",
+      "url": "https://mirrors.nju.edu.cn/python/3.14.6/python-3.14.6.exe#/setup.exe",
       "hash": "30e6397e4dda5b128ec8ac2a57016b0ad5491a2bee83921a6006cc0323fc466c"
     },
     "arm64": {
-      "url": "https://www.python.org/ftp/python/3.14.6/python-3.14.6-arm64.exe#/setup.exe",
+      "url": "https://mirrors.nju.edu.cn/python/3.14.6/python-3.14.6-arm64.exe#/setup.exe",
       "hash": "517412448c44f0583c994723640e208ca82723e340b0cb6a667696ba2eea63fc"
     }
   },

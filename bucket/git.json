@@ -23,7 +23,7 @@
     },
     "arm64": {
       "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-2.54.0-arm64.7z.exe#/dl.7z",
-      "hash": "TODO_REPLACE_ARM64_HASH"
+      "hash": "f8e92cd3359fcbb96998cfd606a536ccc6dbfb23c04e12b29042f9ba45b6b0c7"
     }
   },
   "pre_install": [
