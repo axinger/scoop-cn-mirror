@@ -1,14 +1,14 @@
 {
-  "version": "3.9.16",
+  "version": "3.10.0",
   "description": "Software project management and comprehension tool",
   "homepage": "https://maven.apache.org/",
   "license": "Apache-2.0",
   "suggest": {
     "JDK": "java/openjdk"
   },
-  "url": "https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.9.16/binaries/apache-maven-3.9.16-bin.zip",
-  "hash": "5af3b743dd8b876b5c45da33b676251e5f1687712644abb4ee519ca56e1d89ce",
-  "extract_dir": "apache-maven-3.9.16",
+  "url": "https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.10.0/binaries/apache-maven-3.10.0-bin.zip",
+  "hash": "1f6d9909266510f039f59aa0e13dcd2c66da85f043e56276e41f2918f8bddaff",
+  "extract_dir": "apache-maven-3.10.0",
   "env_add_path": "bin",
   "persist": [
     "conf",
