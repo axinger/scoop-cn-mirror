@@ -10,7 +10,7 @@
       "hash": "5da012101ba2e17113a9a1cd901e9ce1441086f2b7ecb5de06ec94163899a190"
     },
     "32bit": {
-      "url": "https://mirrors.nju.edu.cn/python/3.13.17/python-3.13.17.exe#/setup.exe",
+      "url": "https://www.python.org/ftp/python/3.13.17/python-3.13.17.exe#/setup.exe",
       "hash": "91cd5b0293162e11c5599f80dc5bd14658cf086c8234a3117b58cfcb93c4eff3"
     },
     "arm64": {
